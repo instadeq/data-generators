@@ -51,4 +51,4 @@ on this repo.
 #### deno tools
 
 * curl
-* `deno <https://deno.land/#installation>`_
+* [deno](https://deno.land/#installation)
