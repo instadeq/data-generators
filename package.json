@@ -1,0 +1,23 @@
+{
+  "name": "data-generators",
+  "version": "1.0.0",
+  "description": "Data Generator Scripts for Instadeq Guides",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/instadeq/data-generators.git"
+  },
+  "author": "Instadeq Team",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/instadeq/data-generators/issues"
+  },
+  "homepage": "https://github.com/instadeq/data-generators#readme",
+  "dependencies": {
+    "eslint": "^7.32.0",
+    "prettier": "^2.3.2"
+  }
+}
