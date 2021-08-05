@@ -43,7 +43,7 @@ deno run ./sales.js json-table-array-of-pairs 2
 
 ### Sending Generated Data to a WebHook Using Curl
 
-`curl <https://curl.se/>`_ is a command line tool to do HTTP requests
+[curl](https://curl.se/) is a command line tool to do HTTP requests
 
 ```sh
 export GEN_COUNT=100
