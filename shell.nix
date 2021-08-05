@@ -7,6 +7,7 @@ mkShell {
     glibcLocales
     gnumake
     python39
+    python39Packages.pylint
     pkgs.nodejs-14_x
     deno
     curl
