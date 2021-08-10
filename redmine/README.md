@@ -27,3 +27,17 @@ optional arguments:
                         Path to write output too, prints to stdout if not set
   -p, --pretty          Pretty JSON output if set
 ```
+
+## Examples
+
+
+```sh
+# Fetch last 100 issues from myredmine.org in batches of 25, store the result in last_100_issues.json
+./redmine_issue_fetcher.py -l 25 -m 100 -o last_100_issues.json https://www.myredmine.org/
+
+# Fetch all issues from myredmine.org in batches of 100, store the result in all_issues.json
+./redmine_issue_fetcher.py -o all_issues.json https://www.myredmine.org/
+
+# Fetch all issues from myredmine.org in batches of 100, print the result to stdout
+./redmine_issue_fetcher.py https://www.myredmine.org/
+```
