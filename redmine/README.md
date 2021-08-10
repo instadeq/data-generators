@@ -2,7 +2,7 @@
 
 Fetches issues from a Redmine instance using the JSON REST API.
 
-## USAGE
+## Usage
 
 ```sh
 ./redmine_issue_fetcher.py --help
