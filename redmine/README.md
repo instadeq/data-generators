@@ -1,6 +1,6 @@
 # Redmine Issue Fetcher
 
-Fetches issues from a Redmine instance using the JSON REST API.
+Fetches issues from a Redmine instance using the [JSON REST API](https://www.redmine.org/projects/redmine/wiki/Rest_Issues)
 
 ## Usage
 
