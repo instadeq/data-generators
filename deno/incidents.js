@@ -7,7 +7,7 @@ import {
   addAtMostNDaysTo
 } from './datagen.js';
 
-const TYPES = ['Injury', 'Near Miss', 'Hazzard', 'Other'],
+const TYPES = ['Injury', 'Near Miss', 'Hazard', 'Other'],
   typesGen = makeWeightedChoice(TYPES, [2, 3, 3, 1]),
   SOURCES = [
     'Ergonomic',

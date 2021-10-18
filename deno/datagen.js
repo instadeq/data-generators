@@ -243,7 +243,48 @@ class DateOnly extends Date {
   }
 }
 
-console.log((new DateOnly()).toISOString(), (new DateOnly()).toJSON());
+function mkCountRepeat(repeat, base) {
+  let counter = base || 0,
+    repeatCounter = 0;
+
+  return _o => {
+    const c = counter;
+
+    repeatCounter += 1;
+    if (repeatCounter === repeat) {
+      repeatCounter = 0;
+      counter += 1;
+    }
+
+    return c;
+  };
+}
+
+function mkCycleRepeat(items, repeat) {
+  const countRepeat = mkCountRepeat(repeat),
+    len = items.length;
+
+  return _o => {
+    const c = countRepeat({});
+    return items[c % len];
+  };
+}
+
+function mkCycle(items) {
+  return mkCycleRepeat(items, 1);
+}
+
+function mkGenDict(key, genMap) {
+  return o => {
+    const genKey = o[key],
+      gen = genMap[genKey];
+    return gen(o);
+  };
+}
+
+function mkRandomInRange(from, to) {
+  return _ => randint(from, to);
+}
 
 export {
   entryPoint,
@@ -252,4 +293,10 @@ export {
   dateLastNDays,
   addAtMostNDaysTo,
   DateOnly,
+  randint,
+  mkCountRepeat,
+  mkCycleRepeat,
+  mkCycle,
+  mkGenDict,
+  mkRandomInRange
 };
